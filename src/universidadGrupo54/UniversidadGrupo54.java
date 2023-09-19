@@ -222,7 +222,7 @@ public class UniversidadGrupo54 {
                     
 //********************************************************************************************************************************** 
 //METODO OBTENER MATERIAS CURSADAS    
-     /*AlumnoData aluData=new AlumnoData();
+               /* AlumnoData aluData=new AlumnoData();
                 MateriaData matData=new MateriaData();
                 InscripcionData id=new InscripcionData();
                 
@@ -234,8 +234,13 @@ public class UniversidadGrupo54 {
  
                     System.out.println("id: "+materia.getIdMateria());
                     System.out.println("Nombre: "+materia.getNombre());
-                 }*/               
-//CONSULTA REALIZADA EN LA BASE DE DATOS SQL  CON EL ALUMNO ID 7 
+                 }*/     
+                 
+               //  RESULTADO EXITOSO CONSULTA REALIZADA 7:      run: id: 1,Nombre: lengua y literatura, id: 3,Nombre: lengua 2;
+               //id: 4, Nombre: Matematica 2; id: 5, Nombre: Carpinteria 3; id: 9, Nombre: Emprendedorismo BUILD SUCCESSFUL (total time: 3 seconds)           
+ 
+               
+        //CONSULTA REALIZADA EN LA BASE DE DATOS SQL  CON EL ALUMNO ID 7 
 //MATERIAS QUE SE ENCUENTRA CURSANDO EL ALUMNO 7
 //RESULTADO DE LA BUSQUEDA idMateria         	nombre	                      año Ascendente 1	
 //                                                         1              lengua y literatura                     1
@@ -254,27 +259,27 @@ public class UniversidadGrupo54 {
 //*************************************************************************************************************************************
 //METODO OBTENER MATERIA NO CURSADAS
 
-               /* AlumnoData aluData=new AlumnoData();
-                MateriaData matData=new MateriaData();
-                InscripcionData id=new InscripcionData();
+                        /*AlumnoData aluData = new AlumnoData();
+                            MateriaData matData = new MateriaData();
+                            InscripcionData id = new InscripcionData();
+                            Alumno ricardo=aluData.buscarAlumno(7);
+                           Materia lengua2=matData.buscarMateria(3);
+                           Inscripcion insc=new Inscripcion(ricardo, lengua2, 9);
                 
-                Alumno federico=aluData.buscarAlumno(1);
-                Materia mate=matData.buscarMateria(2);
-                Inscripcion insc= new Inscripcion(federico, mate, 6);
-                
-                for(Materia materia:id.obtenerMateriasNOCursadas(1)){
-                    System.out.println("idMateria: "+materia.getIdMateria());               
-                    System.out.println("nombre: "+materia.getNombre());
-                    System.out.println("año: "+materia.getAnioMateria());
-                    System.out.println("estado: "+materia.isEstado());      
-   
-                }*/
-//FORMA EN LA QUE SE CONSTRUYE LA SENTENCIA SQL
-//SELECT * 
-//FROM materia 
-//WHERE estado = 1 
-//AND idMateria NOT IN (SELECT idMateria FROM inscripcion WHERE idAlumno = ?);
+                          for(Materia materia:id.obtenerMateriasNOCursadas(22)){
+                              System.out.println("nombre: "+materia.getNombre());
+                          }*/
 
+//RESULTADO EXITOSO: run: nombre: lengua y literatura; nombre: matematicas 1; nombre: lengua 2; nombre: Matematica 2;
+//nombre: Carpinteria 3; nombre: Laboratorio 2; nombre: Ingles Tecnico 2; nombre: Frances Técnico I BUILD SUCCESSFUL (total time: 3 seconds)
+   
+                
+//FORMA EN LA QUE SE CONSTRUYE LA SENTENCIA SQL
+//String sql = "SELECT * "
+//                + "FROM materia "
+//                + "WHERE idMateria "
+//                + "NOT IN (SELECT idMateria FROM inscripcion WHERE idAlumno = ?)";
+        
 
 //RESULTADO DE LA CONSULTA EN LA BASE DE DATOS (CON EL IDAlumno 22) esta inscripto en (id 6 laboratorio 4) e (id 9 Emprendedorismo)
 //LISTADO DE MATERIA QUE NO CURSA EL ALUMNO (ID 22)
