@@ -5,6 +5,13 @@
  */
 package universidadGrupo54;
 
+import universidadGrupo54.accesoADatos.AlumnoData;
+import universidadGrupo54.accesoADatos.InscripcionData;
+import universidadGrupo54.accesoADatos.MateriaData;
+import universidadGrupo54.entidades.Alumno;
+import universidadGrupo54.entidades.Inscripcion;
+import universidadGrupo54.entidades.Materia;
+
 /**
  *
  * @author Usuario
@@ -298,61 +305,32 @@ public class UniversidadGrupo54 {
 //          9         Emprendedorismo          3
 
 //********************************************************************************************************************************************
-//METODO OBTENER ALUMNOS POR MATERIA
-//                            AlumnoData aluData=new AlumnoData();
-//                            MateriaData matData=new MateriaData();
-//                             InscripcionData id=new InscripcionData();
-//
-//                           Alumno ricardo=aluData.buscarAlumno(7);
-//                           Materia lengua2=matData.buscarMateria(3);
-//                
-//                          for(Alumno alumno:id.)
-//    
+//METODO OBTENER ALUMNOSXMATERIA
 
-//CONSULTA REALIZADA EN LA BASE DE DATOS SQL RESULTADO*************************************************************************
-//idAlumno Descendente 1	dni	nombre	apellido	fechaNacimiento	estado	
-//                                         22            151514  Gabriela Analia     Solaris              1976-11-02                      1
-//	                       22            151514  Gabriela Analia     Solaris              1976-11-02                       1
-//                                         7              424241  Ricardo                  Arjona              1964-01-19                       1
-//                                         7              424241  Ricardo                  Arjona              1964-01-19                       1
-//                                         7              424241  Ricardo                  Arjona              1964-01-19                       1
-//                                         7              424241  Ricardo                  Arjona              1964-01-19                       1
-//                                         7              424241  Ricardo                  Arjona              1964-01-19                       1
-//                                         4              12345    Belen                     Dimarco            1996-01-06                       1
-//                                         4              12345    Belen                     Dimarco            1996-01-06                       1	
-//                                         2              222        Andres                   Carrera              2003-09-23                       1
-//                                         2              222        Andres                   Carrera              2003-09-23                       1
-//*********************************************************************************************************************************************
-//METODO OBTENER ALUMNOS POR MATERIA
-//                AlumnoData aluData=new AlumnoData();
-//                MateriaData matData=new MateriaData();
-//                InscripcionData id=new InscripcionData();
-//                
-//                //Alumno ricardo=aluData.buscarAlumno(7);
-//               // Materia lengua2=matData.buscarMateria(3);
-//               // Inscripcion insc= new Inscripcion(ricardo, lengua2, 7);
-//                
-//                for(Materia materia:id.obtenerMateriasNOCursadas(22)){
-//                    System.out.println("nombre: "+materia.getNombre());
-//                    System.out.println("año: "+materia.getAnioMateria());
-//                }
-                
- //METODO OBTENER ALUMNOS POR MATERIA
+                                                /*AlumnoData aluData=new AlumnoData();
+                                               MateriaData matData=new MateriaData();
+                                                InscripcionData id=new InscripcionData();
 
-//COMO SE CONSTRUYE LA CONSULTA SQL
-//SELECT a.idAlumno, dni, nombre, apellido, fechaNacimiento, estado
-//FROM inscripcion i, alumno a 
-//WHERE i.idAlumno = a.idAlumno 
-//AND idMateria = 6
-//AND a.estado = 1; 
+                                              Alumno ricardo=aluData.buscarAlumno(7);
+                                              Materia lengua2=matData.buscarMateria(3);
+                                              Inscripcion insc=new Inscripcion(ricardo, lengua2, 9);
 
+                                              for (Alumno alumno : id.obtenerAlumnosXMateria(6)){
+                       System.out.println("ID Alumno: " + alumno.getIdAlumno());
+                       System.out.println("DNI: " + alumno.getDni());
+                       System.out.println("Apellido: " + alumno.getApellido());
+                       System.out.println("Nombre: " + alumno.getNombre());
+                       System.out.println("Fecha de Nacimiento: " + alumno.getFechaNacimiento());
+                       System.out.println("Estado: " + (alumno.isEstado()));
+                       System.out.println("--------");
+                   }    */
 
 //RESULTADO DE LA BASE DE DATOS (sobre la consulta del idMateria 6)
 //Textos completos   idAlumno	dni	nombre	apellido	fechaNacimiento	estado	
 //                     	22              151514     Gabriela Analia   Solaris            1976-11-02                        1
 //                   	4                12345                Belen          Dimarco          1996-01-06                        1
 
-
+//alumnos que no estan cursando la materia id 6
 //Textos completos idAlumno Ascendente 	dni	nombre	apellido	fechaNacimiento	estado	
 //	                                                    2         222              Andres         Carrera             2003-09-23                       1
 //	                                                    2         222              Andres         Carrera             2003-09-23                       1
@@ -365,10 +343,7 @@ public class UniversidadGrupo54 {
 //                                                                      7        424241         Ricardo        Arjona              1964-01-19                       1	
 //                                                                     22       151514   Gabriela Analia  Solaris             1976-11-02                       1
 //	                                                    22       151514  Gabriela Analia   Solaris             1976-11-02                       1
-
-               
-     
-
+                
     }
     }
 

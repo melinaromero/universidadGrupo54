@@ -195,11 +195,11 @@ public class InscripcionData {
     String sql="SELECT a.idAlumno, dni, nombre, apellido, fechaNacimiento, estado "
             + "FROM inscripcion i, alumno a "
             + "WHERE i.idAlumno = a.idAlumno "
-            + "AND idMateria = ?"
-            + "AND a.estado = 1"; 
+            + "AND idMateria = ? "
+            + "AND a.estado = 1 "; 
     
         try {
-            PreparedStatement ps=con.prepareCall(sql);
+            PreparedStatement ps=con.prepareStatement(sql);
             ps.setInt(1, idMateria);
             
             ResultSet rs=ps.executeQuery();

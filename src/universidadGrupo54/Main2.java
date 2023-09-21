@@ -34,13 +34,13 @@ public class Main2 {
         
         
         
-                AlumnoData aluData=new AlumnoData();
+                /*AlumnoData aluData=new AlumnoData();
                 MateriaData matData=new MateriaData();
                 InscripcionData id=new InscripcionData();
                 
                 for(Alumno alumno:id.obtenerAlumnosXMateria(6)){
                     System.out.println(alumno);
-                }
+                }*/
    
 }
 }
