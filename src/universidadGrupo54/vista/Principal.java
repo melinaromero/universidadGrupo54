@@ -5,6 +5,11 @@
  */
 package universidadGrupo54.vista;
 
+import java.awt.Image;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import sun.net.www.content.image.gif;
+
 /**
  *
  * @author xavie
@@ -12,10 +17,54 @@ package universidadGrupo54.vista;
 public class Principal extends javax.swing.JFrame {
 
     /**
-     * Creates new form principal
+     * Creates new form Principal
      */
     public Principal() {
         initComponents();
+        imagen_gif_guardar();
+        imagen2_gif_guardar();
+        imagen3_gif_guardar();
+        
+        imagen5_gif_guardar();
+    }
+
+    public void imagen_gif_guardar() {
+        ImageIcon birrete;
+        birrete = new ImageIcon(getClass().getResource("/imagenes/birrete.gif"));
+        Icon gif = new ImageIcon(birrete.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMalumno.setIcon(gif);
+
+    }
+
+    public void imagen2_gif_guardar() {
+        ImageIcon libros;
+        libros = new ImageIcon(getClass().getResource("/imagenes/libros.gif"));
+        Icon gif = new ImageIcon(libros.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMmateria.setIcon(gif);
+    }
+
+    public void imagen3_gif_guardar() {
+        ImageIcon universidad;
+        universidad = new ImageIcon(getClass().getResource("/imagenes/universidad.gif"));
+        Icon gif = new ImageIcon(universidad.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMadministracion.setIcon(gif);
+    }
+        public void imagen4_gif_guardar() {
+            ImageIcon computadora;
+            computadora = new  ImageIcon(getClass().getResource("/imagenes/computadora.gif"));
+            Icon gif = new ImageIcon(computadora.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+            jMconsulta.setIcon(gif);
+            
+        
+        }
+  
+    
+
+    public void imagen5_gif_guardar() {
+        ImageIcon salida;
+        salida = new ImageIcon(getClass().getResource("/imagenes/salida.gif"));
+        Icon gif = new ImageIcon(salida.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMsalir.setIcon(gif);
     }
 
     /**
@@ -27,129 +76,91 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuBar3 = new javax.swing.JMenuBar();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
-        jMenu7 = new javax.swing.JMenu();
-        jMenuBar4 = new javax.swing.JMenuBar();
-        jMenu8 = new javax.swing.JMenu();
-        jMenu9 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMalumno = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu13 = new javax.swing.JMenu();
-        jMenu15 = new javax.swing.JMenu();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        jMmateria = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu14 = new javax.swing.JMenu();
-        jMenu10 = new javax.swing.JMenu();
+        jMadministracion = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu11 = new javax.swing.JMenu();
+        jMconsulta = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
-        jMenu12 = new javax.swing.JMenu();
-
-        jMenu3.setText("File");
-        jMenuBar2.add(jMenu3);
-
-        jMenu4.setText("Edit");
-        jMenuBar2.add(jMenu4);
-
-        jMenu5.setText("File");
-        jMenuBar3.add(jMenu5);
-
-        jMenu6.setText("Edit");
-        jMenuBar3.add(jMenu6);
-
-        jMenu7.setText("jMenu7");
-
-        jMenu8.setText("File");
-        jMenuBar4.add(jMenu8);
-
-        jMenu9.setText("Edit");
-        jMenuBar4.add(jMenu9);
+        jMsalir = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
-        jMenuItem2.setText("jMenuItem2");
-
-        jMenu13.setText("jMenu13");
-
-        jMenu15.setText("jMenu15");
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jMenu1.setText("Alumno ");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FooterUlpVirtualM7.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 90));
 
-        jMenuItem3.setText("Formulario de Alumno");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem3);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/6.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 580, 230));
 
-        jMenuBar1.add(jMenu1);
+        jMalumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/birrete.gif"))); // NOI18N
+        jMalumno.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jMalumno.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMalumno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jMenu2.setText("Materia");
+        jMenuItem2.setText("Formulario de Alumno");
+        jMalumno.add(jMenuItem2);
 
-        jMenu14.setText("Formulario por Materia");
-        jMenu2.add(jMenu14);
+        jMenuBar2.add(jMalumno);
 
-        jMenuBar1.add(jMenu2);
+        jMmateria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/libros.gif"))); // NOI18N
+        jMmateria.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMmateria.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jMenu10.setText("Administracion");
+        jMenuItem3.setText("Formulario de Materia");
+        jMmateria.add(jMenuItem3);
 
-        jMenuItem4.setText("Manejo de Inscripciones");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu10.add(jMenuItem4);
+        jMenuBar2.add(jMmateria);
 
-        jMenuItem5.setText("Mipulacion de Notas");
-        jMenu10.add(jMenuItem5);
+        jMadministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/universidad.gif"))); // NOI18N
+        jMadministracion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMadministracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jMenuBar1.add(jMenu10);
+        jMenuItem4.setText("Manejo de Inscripcion");
+        jMadministracion.add(jMenuItem4);
 
-        jMenu11.setText("Consulta");
+        jMenuItem5.setText("Manipulacion de Notas");
+        jMadministracion.add(jMenuItem5);
+
+        jMenuBar2.add(jMadministracion);
+
+        jMconsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/computadora.gif"))); // NOI18N
+        jMconsulta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMconsulta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jMenuItem6.setText("Alumno por Materia");
-        jMenu11.add(jMenuItem6);
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMconsulta.add(jMenuItem6);
 
-        jMenuBar1.add(jMenu11);
+        jMenuBar2.add(jMconsulta);
 
-        jMenu12.setText("Salir");
-        jMenuBar1.add(jMenu12);
+        jMsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salida.gif"))); // NOI18N
+        jMsalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMsalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jMenuBar2.add(jMsalir);
 
-        setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 377, Short.MAX_VALUE)
-        );
+        setJMenuBar(jMenuBar2);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,7 +188,6 @@ public class Principal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -188,30 +198,19 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
-    private javax.swing.JMenu jMenu11;
-    private javax.swing.JMenu jMenu12;
-    private javax.swing.JMenu jMenu13;
-    private javax.swing.JMenu jMenu14;
-    private javax.swing.JMenu jMenu15;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenu jMenu8;
-    private javax.swing.JMenu jMenu9;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JMenu jMadministracion;
+    private javax.swing.JMenu jMalumno;
+    private javax.swing.JMenu jMconsulta;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuBar jMenuBar3;
-    private javax.swing.JMenuBar jMenuBar4;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenu jMmateria;
+    private javax.swing.JMenu jMsalir;
     // End of variables declaration//GEN-END:variables
 }
