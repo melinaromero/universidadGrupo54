@@ -68,12 +68,18 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
 
         jDateChooser1.setBackground(new java.awt.Color(102, 102, 102));
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 313, 120, 20));
+
+        jTextField1.setBackground(new java.awt.Color(153, 255, 255));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 175, 20));
 
         jBbuscar.setBackground(new java.awt.Color(102, 102, 102));
         jBbuscar.setText("Buscar");
         getContentPane().add(jBbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, 30));
+
+        jTextField2.setBackground(new java.awt.Color(153, 255, 255));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 109, 175, 20));
+
+        jTextField3.setBackground(new java.awt.Color(153, 255, 255));
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 175, 20));
         getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
 
