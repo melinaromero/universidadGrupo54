@@ -27,6 +27,7 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -44,6 +45,9 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
         jLabel6 = new javax.swing.JLabel();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/investigacion (1).gif"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 30, 20));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jLabel1.setText("Codigo:");
@@ -75,7 +79,7 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
 
         jButton1.setBackground(new java.awt.Color(102, 102, 102));
         jButton1.setText("Buscar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(102, 102, 102));
         jButton2.setText("Nuevo ");
@@ -94,6 +98,7 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 300, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/55.jpg"))); // NOI18N
+        jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 420, 310));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/FooterUlpVirtualM7.png"))); // NOI18N
@@ -115,6 +120,7 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
