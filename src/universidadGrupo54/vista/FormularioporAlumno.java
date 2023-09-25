@@ -5,6 +5,10 @@
  */
 package universidadGrupo54.vista;
 
+import java.awt.Image;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author xavie
@@ -16,7 +20,16 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
      */
     public FormularioporAlumno() {
         initComponents();
+          imagen6_gif_guardar();
     }
+
+    public void imagen6_gif_guardar() {
+        ImageIcon investigacion;
+        investigacion = new ImageIcon(getClass().getResource("/imagenes/investigacion.gif"));
+        Icon gif = new ImageIcon(investigacion.getImage().getScaledInstance(40, 40, Image.SCALE_DEFAULT));
+        jLbuscar.setIcon(gif);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,10 +40,10 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel8 = new javax.swing.JLabel();
+        jLbuscar = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        jBbuscar = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jRadioButton1 = new javax.swing.JRadioButton();
@@ -39,25 +52,26 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jBnuevo = new javax.swing.JButton();
+        jBeliminar = new javax.swing.JButton();
+        jBguardar = new javax.swing.JButton();
+        jBsalir = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/investigacion (1).gif"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 30, 30));
+        jLbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/investigacion.gif"))); // NOI18N
+        getContentPane().add(jLbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 30, 30));
 
         jDateChooser1.setBackground(new java.awt.Color(102, 102, 102));
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 313, 120, 20));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 175, 20));
 
-        jButton1.setBackground(new java.awt.Color(102, 102, 102));
-        jButton1.setText("Buscar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
+        jBbuscar.setBackground(new java.awt.Color(102, 102, 102));
+        jBbuscar.setText("Buscar");
+        getContentPane().add(jBbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 109, 175, 20));
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 175, 20));
         getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
@@ -82,21 +96,21 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         jLabel5.setText("Fecha de Nacimineto:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(102, 102, 102));
-        jButton2.setText("Nuevo");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 380, -1, -1));
+        jBnuevo.setBackground(new java.awt.Color(102, 102, 102));
+        jBnuevo.setText("Nuevo");
+        getContentPane().add(jBnuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 380, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(102, 102, 102));
-        jButton3.setText("Eliminar");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 380, -1, -1));
+        jBeliminar.setBackground(new java.awt.Color(102, 102, 102));
+        jBeliminar.setText("Eliminar");
+        getContentPane().add(jBeliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 380, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(102, 102, 102));
-        jButton4.setText("Guardar");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 380, -1, -1));
+        jBguardar.setBackground(new java.awt.Color(102, 102, 102));
+        jBguardar.setText("Guardar");
+        getContentPane().add(jBguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 380, -1, -1));
 
-        jButton5.setBackground(new java.awt.Color(102, 102, 102));
-        jButton5.setText("Salir");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, -1));
+        jBsalir.setBackground(new java.awt.Color(102, 102, 102));
+        jBsalir.setText("Salir");
+        getContentPane().add(jBsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FooterUlpVirtualM7.png"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 91));
@@ -104,16 +118,19 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/55.jpg"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 450));
 
+        jLabel9.setText("jLabel9");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jBbuscar;
+    private javax.swing.JButton jBeliminar;
+    private javax.swing.JButton jBguardar;
+    private javax.swing.JButton jBnuevo;
+    private javax.swing.JButton jBsalir;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -122,7 +139,8 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLbuscar;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;

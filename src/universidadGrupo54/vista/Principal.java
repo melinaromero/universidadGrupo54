@@ -5,6 +5,11 @@
  */
 package universidadGrupo54.vista;
 
+import java.awt.Image;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import sun.net.www.content.image.gif;
+
 /**
  *
  * @author xavie
@@ -16,6 +21,50 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        imagen_gif_guardar();
+        imagen2_gif_guardar();
+        imagen3_gif_guardar();
+        
+        imagen5_gif_guardar();
+    }
+
+    public void imagen_gif_guardar() {
+        ImageIcon birrete;
+        birrete = new ImageIcon(getClass().getResource("/imagenes/birrete.gif"));
+        Icon gif = new ImageIcon(birrete.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMalumno.setIcon(gif);
+
+    }
+
+    public void imagen2_gif_guardar() {
+        ImageIcon libros;
+        libros = new ImageIcon(getClass().getResource("/imagenes/libros.gif"));
+        Icon gif = new ImageIcon(libros.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMmateria.setIcon(gif);
+    }
+
+    public void imagen3_gif_guardar() {
+        ImageIcon universidad;
+        universidad = new ImageIcon(getClass().getResource("/imagenes/universidad.gif"));
+        Icon gif = new ImageIcon(universidad.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMadministracion.setIcon(gif);
+    }
+        public void imagen4_gif_guardar() {
+            ImageIcon computadora;
+            computadora = new  ImageIcon(getClass().getResource("/imagenes/computadora.gif"));
+            Icon gif = new ImageIcon(computadora.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+            jMconsulta.setIcon(gif);
+            
+        
+        }
+  
+    
+
+    public void imagen5_gif_guardar() {
+        ImageIcon salida;
+        salida = new ImageIcon(getClass().getResource("/imagenes/salida.gif"));
+        Icon gif = new ImageIcon(salida.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMsalir.setIcon(gif);
     }
 
     /**
@@ -31,16 +80,16 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu6 = new javax.swing.JMenu();
+        jMalumno = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu7 = new javax.swing.JMenu();
+        jMmateria = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
+        jMadministracion = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMconsulta = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+        jMsalir = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -54,31 +103,40 @@ public class Principal extends javax.swing.JFrame {
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 580, 230));
 
-        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/birrete.gif"))); // NOI18N
+        jMalumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/birrete.gif"))); // NOI18N
+        jMalumno.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jMalumno.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMalumno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jMenuItem2.setText("Formulario de Alumno");
-        jMenu6.add(jMenuItem2);
+        jMalumno.add(jMenuItem2);
 
-        jMenuBar2.add(jMenu6);
+        jMenuBar2.add(jMalumno);
 
-        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/libros.gif"))); // NOI18N
+        jMmateria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/libros.gif"))); // NOI18N
+        jMmateria.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMmateria.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jMenuItem3.setText("Formulario de Materia");
-        jMenu7.add(jMenuItem3);
+        jMmateria.add(jMenuItem3);
 
-        jMenuBar2.add(jMenu7);
+        jMenuBar2.add(jMmateria);
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/universidad.gif"))); // NOI18N
+        jMadministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/universidad.gif"))); // NOI18N
+        jMadministracion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMadministracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jMenuItem4.setText("Manejo de Inscripcion");
-        jMenu1.add(jMenuItem4);
+        jMadministracion.add(jMenuItem4);
 
         jMenuItem5.setText("Manipulacion de Notas");
-        jMenu1.add(jMenuItem5);
+        jMadministracion.add(jMenuItem5);
 
-        jMenuBar2.add(jMenu1);
+        jMenuBar2.add(jMadministracion);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/computadora.gif"))); // NOI18N
+        jMconsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/computadora.gif"))); // NOI18N
+        jMconsulta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMconsulta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jMenuItem6.setText("Alumno por Materia");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -86,12 +144,14 @@ public class Principal extends javax.swing.JFrame {
                 jMenuItem6ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem6);
+        jMconsulta.add(jMenuItem6);
 
-        jMenuBar2.add(jMenu2);
+        jMenuBar2.add(jMconsulta);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salida.gif"))); // NOI18N
-        jMenuBar2.add(jMenu3);
+        jMsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salida.gif"))); // NOI18N
+        jMsalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMsalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jMenuBar2.add(jMsalir);
 
         setJMenuBar(jMenuBar2);
 
@@ -140,11 +200,9 @@ public class Principal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMadministracion;
+    private javax.swing.JMenu jMalumno;
+    private javax.swing.JMenu jMconsulta;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
@@ -152,5 +210,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenu jMmateria;
+    private javax.swing.JMenu jMsalir;
     // End of variables declaration//GEN-END:variables
 }
