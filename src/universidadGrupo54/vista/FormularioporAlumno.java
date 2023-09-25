@@ -40,8 +40,9 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
         jLbuscar2 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser3 = new com.toedter.calendar.JDateChooser();
         jTextField1 = new javax.swing.JTextField();
         jBbuscar = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
@@ -65,9 +66,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         jLbuscar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/buscando.png"))); // NOI18N
         jLbuscar2.setPreferredSize(new java.awt.Dimension(40, 40));
         getContentPane().add(jLbuscar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 30, 40));
-
-        jDateChooser1.setBackground(new java.awt.Color(102, 102, 102));
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 313, 120, 20));
+        getContentPane().add(jDateChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 160, -1));
 
         jTextField1.setBackground(new java.awt.Color(153, 255, 255));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 175, 20));
@@ -100,7 +99,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel5.setText("Fecha de Nacimineto:");
+        jLabel5.setText("Fecha de Nacimiento:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
         jBnuevo.setBackground(new java.awt.Color(102, 102, 102));
@@ -138,7 +137,8 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     private javax.swing.JButton jBguardar;
     private javax.swing.JButton jBnuevo;
     private javax.swing.JButton jBsalir;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private com.toedter.calendar.JDateChooser jDateChooser3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
