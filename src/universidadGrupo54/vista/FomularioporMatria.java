@@ -8,19 +8,24 @@ package universidadGrupo54.vista;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import universidadGrupo54.accesoADatos.MateriaData;
+import universidadGrupo54.entidades.Materia;
 
 /**
  *
  * @author xavie
  */
 public class FomularioporMatria extends javax.swing.JInternalFrame {
-
+    private MateriaData matData = new MateriaData();
+    private Materia materiaActual = null;
     /**
      * Creates new form FomularioporMatria
      */
     public FomularioporMatria() {
         initComponents();
         imagen_gif_guardar();
+        limpiarCamposMateria();
     }
 
     public void imagen_gif_guardar() {
@@ -45,15 +50,15 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jRadioestado = new javax.swing.JRadioButton();
+        jTFCodigo = new javax.swing.JTextField();
+        jTFnombre = new javax.swing.JTextField();
+        jTFanio = new javax.swing.JTextField();
+        jRBestado = new javax.swing.JRadioButton();
         jBbuscar = new javax.swing.JButton();
         jBnuevo = new javax.swing.JButton();
         jBeliminar = new javax.swing.JButton();
         jBguardar = new javax.swing.JButton();
-        jBsalir = new javax.swing.JButton();
+        jBSALIR = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -63,52 +68,81 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
         getContentPane().add(jLbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 30, 30));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Codigo:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Año:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 40, 20));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Estado:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
-        jTextField1.setBackground(new java.awt.Color(153, 255, 255));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 210, 20));
+        jTFCodigo.setBackground(new java.awt.Color(153, 255, 255));
+        getContentPane().add(jTFCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 210, 20));
 
-        jTextField2.setBackground(new java.awt.Color(153, 255, 255));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 180, 20));
+        jTFnombre.setBackground(new java.awt.Color(153, 255, 255));
+        getContentPane().add(jTFnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 180, 20));
 
-        jTextField3.setBackground(new java.awt.Color(153, 255, 255));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 100, 20));
+        jTFanio.setBackground(new java.awt.Color(153, 255, 255));
+        getContentPane().add(jTFanio, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 100, 20));
 
-        jRadioestado.setBackground(new java.awt.Color(0, 0, 255));
-        getContentPane().add(jRadioestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, -1, -1));
+        jRBestado.setBackground(new java.awt.Color(0, 0, 255));
+        getContentPane().add(jRBestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, -1, -1));
 
         jBbuscar.setBackground(new java.awt.Color(102, 102, 102));
         jBbuscar.setText("Buscar");
+        jBbuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBbuscarActionPerformed(evt);
+            }
+        });
         getContentPane().add(jBbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, -1, -1));
 
         jBnuevo.setBackground(new java.awt.Color(102, 102, 102));
         jBnuevo.setText("Nuevo ");
+        jBnuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBnuevoActionPerformed(evt);
+            }
+        });
         getContentPane().add(jBnuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
 
         jBeliminar.setBackground(new java.awt.Color(102, 102, 102));
         jBeliminar.setText("Eliminar");
+        jBeliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBeliminarActionPerformed(evt);
+            }
+        });
         getContentPane().add(jBeliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, -1, -1));
 
         jBguardar.setBackground(new java.awt.Color(102, 102, 102));
         jBguardar.setText("Gurdar");
-        getContentPane().add(jBguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, -1, -1));
+        jBguardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBguardarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, -1, -1));
 
-        jBsalir.setBackground(new java.awt.Color(102, 102, 102));
-        jBsalir.setText("Salir ");
-        getContentPane().add(jBsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 300, -1, -1));
+        jBSALIR.setBackground(new java.awt.Color(102, 102, 102));
+        jBSALIR.setText("Salir ");
+        jBSALIR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBSALIRActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 300, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/55.jpg"))); // NOI18N
         jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -120,13 +154,84 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jBbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBbuscarActionPerformed
+        // TODO add your handling code here:
+          try {
+            Integer codigo;
+            codigo = Integer.parseInt(jTFCodigo.getText());
+            materiaActual = matData.buscarMateria(codigo);
+            if (materiaActual != null) {
+                jTFnombre.setText(materiaActual.getNombre());
+                jTFanio.setText(String.valueOf(materiaActual.getAnioMateria()));
+                //jTFanio.setText("" + materiaActual.getAnioMateria()); OTRA OPCION
+                jRBestado.setSelected(materiaActual.isEstado());
+
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Debe ingresar un numero de materia válido. ");
+
+        }
+    }//GEN-LAST:event_jBbuscarActionPerformed
+
+    private void jBnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBnuevoActionPerformed
+        // TODO add your handling code here:
+         limpiarCamposMateria();
+         materiaActual = null;
+    }//GEN-LAST:event_jBnuevoActionPerformed
+
+    private void jBeliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBeliminarActionPerformed
+        // TODO add your handling code here:
+         if(materiaActual!=null){
+        matData.eleminarMateria(materiaActual.getIdMateria());
+        materiaActual=null;
+        limpiarCamposMateria();
+        }else{
+        JOptionPane.showMessageDialog(this, "No hay una materia Seleccionada. ");
+        }
+    }//GEN-LAST:event_jBeliminarActionPerformed
+
+    private void jBguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBguardarActionPerformed
+        // TODO add your handling code here:
+           try {
+            Integer codigo = Integer.parseInt(jTFCodigo.getText());
+            String nombre = jTFnombre.getText();
+            Integer anio = Integer.parseInt(jTFanio.getText());
+            boolean estado = jRBestado.isSelected();
+
+            if (materiaActual == null) {
+                materiaActual = new Materia(codigo, nombre, anio, estado);
+                matData.guardarMateria(materiaActual);
+            } else {
+                materiaActual.setIdMateria(codigo);
+                materiaActual.setNombre(nombre);
+                materiaActual.setAnioMateria(anio);
+                //materiaActual.setEstado(true);
+                matData.modificarMateria(materiaActual);
+
+            }
+
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Debe ingresar un numero de materia válido. ");
+        }
+    }//GEN-LAST:event_jBguardarActionPerformed
+
+    private void jBSALIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSALIRActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jBSALIRActionPerformed
+ private void limpiarCamposMateria() {
+        jTFCodigo.setText("");
+        jTFnombre.setText("");
+        jTFanio.setText("");
+        jRBestado.setSelected(true);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBSALIR;
     private javax.swing.JButton jBbuscar;
     private javax.swing.JButton jBeliminar;
     private javax.swing.JButton jBguardar;
     private javax.swing.JButton jBnuevo;
-    private javax.swing.JButton jBsalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -134,9 +239,9 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLbuscar;
-    private javax.swing.JRadioButton jRadioestado;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JRadioButton jRBestado;
+    private javax.swing.JTextField jTFCodigo;
+    private javax.swing.JTextField jTFanio;
+    private javax.swing.JTextField jTFnombre;
     // End of variables declaration//GEN-END:variables
 }
