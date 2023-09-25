@@ -24,9 +24,9 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
     }
 
     public void imagen_gif_guardar() {
-        ImageIcon investigacion;
-        investigacion = new ImageIcon(getClass().getResource("/imagenes/investigacion.gif"));
-        Icon gif = new ImageIcon(investigacion.getImage().getScaledInstance(40, 40, Image.SCALE_DEFAULT));
+        ImageIcon buscando;
+       buscando = new ImageIcon(getClass().getResource("/imagenes/buscando.gif"));
+        Icon gif = new ImageIcon(buscando.getImage().getScaledInstance(40, 40, Image.SCALE_DEFAULT));
         jLbuscar.setIcon(gif);
 
     }
@@ -59,7 +59,7 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/investigacion.gif"))); // NOI18N
+        jLbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/buscando.png"))); // NOI18N
         getContentPane().add(jLbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 30, 30));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N

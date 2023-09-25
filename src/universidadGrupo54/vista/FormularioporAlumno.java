@@ -24,10 +24,10 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     }
 
     public void imagen6_gif_guardar() {
-        ImageIcon investigacion;
-        investigacion = new ImageIcon(getClass().getResource("/imagenes/investigacion.gif"));
-        Icon gif = new ImageIcon(investigacion.getImage().getScaledInstance(40, 40, Image.SCALE_DEFAULT));
-        jLbuscar.setIcon(gif);
+        ImageIcon buscando;
+        buscando = new ImageIcon(getClass().getResource("/imagenes/buscando.gif"));
+        Icon gif = new ImageIcon(buscando.getImage().getScaledInstance(40, 40, Image.SCALE_DEFAULT));
+        jLbuscar2.setIcon(gif);
     }
     
 
@@ -40,7 +40,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLbuscar = new javax.swing.JLabel();
+        jLbuscar2 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jTextField1 = new javax.swing.JTextField();
         jBbuscar = new javax.swing.JButton();
@@ -62,8 +62,9 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/investigacion.gif"))); // NOI18N
-        getContentPane().add(jLbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 30, 30));
+        jLbuscar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/buscando.png"))); // NOI18N
+        jLbuscar2.setPreferredSize(new java.awt.Dimension(40, 40));
+        getContentPane().add(jLbuscar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 30, 40));
 
         jDateChooser1.setBackground(new java.awt.Color(102, 102, 102));
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 313, 120, 20));
@@ -71,7 +72,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
 
         jBbuscar.setBackground(new java.awt.Color(102, 102, 102));
         jBbuscar.setText("Buscar");
-        getContentPane().add(jBbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
+        getContentPane().add(jBbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, 30));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 109, 175, 20));
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 175, 20));
         getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
@@ -140,7 +141,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLbuscar;
+    private javax.swing.JLabel jLbuscar2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
