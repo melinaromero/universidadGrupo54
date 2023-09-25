@@ -27,85 +27,80 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu6 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu5 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/FooterUlpVirtualM7.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FooterUlpVirtualM7.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 90));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/6.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 580, 250));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/6.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 580, 230));
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/birrete.gif"))); // NOI18N
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/birrete.gif"))); // NOI18N
 
-        jMenuItem1.setText("Formulario de Alumno");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem2.setText("Formulario de Alumno");
+        jMenu6.add(jMenuItem2);
+
+        jMenuBar2.add(jMenu6);
+
+        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/libros.gif"))); // NOI18N
+
+        jMenuItem3.setText("Formulario de Materia");
+        jMenu7.add(jMenuItem3);
+
+        jMenuBar2.add(jMenu7);
+
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/universidad.gif"))); // NOI18N
+
+        jMenuItem4.setText("Manejo de Inscripcion");
+        jMenu1.add(jMenuItem4);
+
+        jMenuItem5.setText("Manipulacion de Notas");
+        jMenu1.add(jMenuItem5);
+
+        jMenuBar2.add(jMenu1);
+
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/computadora.gif"))); // NOI18N
+
+        jMenuItem6.setText("Alumno por Materia");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItem6ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu2.add(jMenuItem6);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar2.add(jMenu2);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/libros.gif"))); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salida.gif"))); // NOI18N
+        jMenuBar2.add(jMenu3);
 
-        jMenuItem2.setText("Formulario de Materia");
-        jMenu2.add(jMenuItem2);
-
-        jMenuBar1.add(jMenu2);
-
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/universidad.gif"))); // NOI18N
-
-        jMenuItem3.setText("Manejo de Inscripciones");
-        jMenu3.add(jMenuItem3);
-
-        jMenuItem4.setText("Manejo de Notas");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem4);
-
-        jMenuBar1.add(jMenu3);
-
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/computadora.gif"))); // NOI18N
-
-        jMenuItem5.setText("Alumno por Materia");
-        jMenu4.add(jMenuItem5);
-
-        jMenuBar1.add(jMenu4);
-
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/salida.gif"))); // NOI18N
-        jMenuBar1.add(jMenu5);
-
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBar2);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,17 +139,18 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     // End of variables declaration//GEN-END:variables
 }

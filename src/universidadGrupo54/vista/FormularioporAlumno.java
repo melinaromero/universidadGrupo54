@@ -98,10 +98,10 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         jButton5.setText("Salir");
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/FooterUlpVirtualM7.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FooterUlpVirtualM7.png"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 91));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/55.jpg"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/55.jpg"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 450));
 
         pack();

@@ -46,8 +46,8 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/investigacion (1).gif"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 30, 20));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/investigacion.gif"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 30, 30));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jLabel1.setText("Codigo:");
@@ -97,11 +97,11 @@ public class FomularioporMatria extends javax.swing.JInternalFrame {
         jButton5.setText("Salir ");
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 300, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/55.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/55.jpg"))); // NOI18N
         jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 420, 310));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universidadGrupo54/vista/FooterUlpVirtualM7.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FooterUlpVirtualM7.png"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 70));
 
         pack();
