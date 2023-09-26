@@ -77,7 +77,7 @@ public class FormulariodeInscripciones extends javax.swing.JInternalFrame {
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 118, 645, 10));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel1.setForeground(new java.awt.Color(51, 255, 255));
         jLabel1.setText("Formulario de Inscripcion");
         jLabel1.setFocusCycleRoot(true);
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, -1));

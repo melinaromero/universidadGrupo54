@@ -57,6 +57,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         jTapellido = new javax.swing.JTextField();
         jBbuscar = new javax.swing.JButton();
         jTdoc = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
         jTnombre = new javax.swing.JTextField();
         jRestado = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
@@ -76,11 +77,11 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
 
         jLbuscar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/buscando.png"))); // NOI18N
         jLbuscar2.setPreferredSize(new java.awt.Dimension(40, 40));
-        getContentPane().add(jLbuscar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 30, 40));
-        getContentPane().add(jDfechaNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 160, -1));
+        getContentPane().add(jLbuscar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, 30, 30));
+        getContentPane().add(jDfechaNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 318, 160, 20));
 
         jTapellido.setBackground(new java.awt.Color(153, 255, 255));
-        getContentPane().add(jTapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 175, 20));
+        getContentPane().add(jTapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 175, 20));
 
         jBbuscar.setBackground(new java.awt.Color(102, 102, 102));
         jBbuscar.setText("Buscar");
@@ -89,34 +90,50 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
                 jBbuscarActionPerformed(evt);
             }
         });
-        getContentPane().add(jBbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, 30));
+        getContentPane().add(jBbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, -1, 30));
 
         jTdoc.setBackground(new java.awt.Color(153, 255, 255));
-        getContentPane().add(jTdoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 109, 175, 20));
+        jTdoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTdocActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTdoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 175, 20));
+
+        jLabel8.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel8.setText("Formulario por de Alumno");
+        jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 400, -1));
 
         jTnombre.setBackground(new java.awt.Color(153, 255, 255));
-        getContentPane().add(jTnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 175, 20));
-        getContentPane().add(jRestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
+        getContentPane().add(jTnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 175, 20));
+        getContentPane().add(jRestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Documento:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 109, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Apellido:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 159, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Nombre:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 203, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Estado:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Fecha de Nacimiento:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
 
         jBnuevo.setBackground(new java.awt.Color(102, 102, 102));
         jBnuevo.setText("Nuevo");
@@ -155,7 +172,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         getContentPane().add(jBsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FooterUlpVirtualM7.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 91));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 70));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/55.jpg"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 450));
@@ -240,6 +257,10 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
         dispose();
 
     }//GEN-LAST:event_jBsalirActionPerformed
+
+    private void jTdocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTdocActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTdocActionPerformed
     private void limpiarCampos() {
         jTdoc.setText("");
         jTapellido.setText("");
@@ -263,6 +284,7 @@ public class FormularioporAlumno extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLbuscar2;
     private javax.swing.JRadioButton jRestado;
