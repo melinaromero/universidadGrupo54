@@ -7,7 +7,7 @@
         <Menu class="javax.swing.JMenu" name="jMalumno">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/estudiante.gif"/>
+              <Image iconType="3" name="/imagenes/graduacion.png"/>
             </Property>
           </Properties>
           <Events>
@@ -27,7 +27,7 @@
         <Menu class="javax.swing.JMenu" name="jMmateria">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/libros (2).gif"/>
+              <Image iconType="3" name="/imagenes/m_educacion4.png"/>
             </Property>
           </Properties>
           <SubComponents>
@@ -44,7 +44,7 @@
         <Menu class="javax.swing.JMenu" name="jMadministracion">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/instalaciones.gif"/>
+              <Image iconType="3" name="/imagenes/m_universidad3.png"/>
             </Property>
           </Properties>
           <SubComponents>
@@ -66,7 +66,7 @@
         <Menu class="javax.swing.JMenu" name="jMconsulta">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/conocimiento.gif"/>
+              <Image iconType="3" name="/imagenes/m_universidad4.png"/>
             </Property>
           </Properties>
           <SubComponents>
@@ -80,7 +80,7 @@
         <Menu class="javax.swing.JMenu" name="jMsalir">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/salida (2).gif"/>
+              <Image iconType="3" name="/imagenes/m_salida4.png"/>
             </Property>
           </Properties>
           <Events>

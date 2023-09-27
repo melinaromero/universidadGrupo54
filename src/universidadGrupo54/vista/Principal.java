@@ -23,48 +23,48 @@ public class Principal extends javax.swing.JFrame {
         initComponents();
        this.setLocationRelativeTo(null);
         this.setSize(600, 500);
-        imagen_gif_guardar();
-        imagen2_gif_guardar();
-        imagen3_gif_guardar();
-
-        imagen5_gif_guardar();
+        imagen_PGN_guardar();
+        imagen2_PGN_guardar();
+        imagen3_PGN_guardar();
+        imagen4_PGN_guardar();
+        imagen5_PGN_guardar();
     }
 
-    public void imagen_gif_guardar() {
-        ImageIcon estudiante;
-        estudiante = new ImageIcon(getClass().getResource("/imagenes/estudiante.gif"));
-        Icon gif = new ImageIcon(estudiante.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-        jMalumno.setIcon(gif);
-
-    }
-
-    public void imagen2_gif_guardar() {
-        ImageIcon libros2;
-        libros2 = new ImageIcon(getClass().getResource("/imagenes/libros2.gif"));
-        Icon gif = new ImageIcon(libros2.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-        jMmateria.setIcon(gif);
-    }
-
-    public void imagen3_gif_guardar() {
-        ImageIcon instalaciones;
-        instalaciones = new ImageIcon(getClass().getResource("/imagenes/universidad.gif"));
-        Icon gif = new ImageIcon(instalaciones.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-        jMadministracion.setIcon(gif);
-    }
-
-    public void imagen4_gif_guardar() {
-        ImageIcon conocimiento;
-        conocimiento = new ImageIcon(getClass().getResource("/imagenes/conocimiento.gif"));
-        Icon gif = new ImageIcon(conocimiento.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-        jMconsulta.setIcon(gif);
+    public void imagen_PGN_guardar() {
+        ImageIcon  graduacion;
+        graduacion = new ImageIcon(getClass().getResource("/imagenes/m_sombrero-de-graduacion.PGN"));
+        Icon PGN = new ImageIcon(graduacion.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMalumno.setIcon(PGN);
 
     }
 
-    public void imagen5_gif_guardar() {
-        ImageIcon salida;
-        salida = new ImageIcon(getClass().getResource("/imagenes/salida.gif"));
-        Icon gif = new ImageIcon(salida.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
-        jMsalir.setIcon(gif);
+    public void imagen2_PGN_guardar() {
+        ImageIcon m_educacion4;
+        m_educacion4 = new ImageIcon(getClass().getResource("/imagenes/m_educacion4.PGN"));
+        Icon PGN = new ImageIcon(m_educacion4.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMmateria.setIcon(PGN);
+    }
+
+    public void imagen3_PGN_guardar() {
+        ImageIcon m_educacion4;
+        m_educacion4 = new ImageIcon(getClass().getResource("/imagenes/m_educacion4.PGN"));
+        Icon PGN = new ImageIcon(m_educacion4.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMadministracion.setIcon(PGN);
+    }
+
+    public void imagen4_PGN_guardar() {
+        ImageIcon m_universidad4;
+        m_universidad4 = new ImageIcon(getClass().getResource("/imagenes/m_universidad4.PGN"));
+        Icon PGN = new ImageIcon(m_universidad4.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMconsulta.setIcon(PGN);
+
+    }
+
+    public void imagen5_PGN_guardar() {
+        ImageIcon m_salida4;
+        m_salida4 = new ImageIcon(getClass().getResource("/imagenes/m_salida4.PGN"));
+        Icon PGN = new ImageIcon(m_salida4.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT));
+        jMsalir.setIcon(PGN);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -118,7 +118,7 @@ public class Principal extends javax.swing.JFrame {
 
         getContentPane().add(escritorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 320));
 
-        jMalumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/estudiante.gif"))); // NOI18N
+        jMalumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/graduacion.png"))); // NOI18N
         jMalumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMalumnoActionPerformed(evt);
@@ -135,7 +135,7 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMalumno);
 
-        jMmateria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/libros (2).gif"))); // NOI18N
+        jMmateria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/m_educacion4.png"))); // NOI18N
 
         jMFormulariodeMateria.setText("Formulario de Materia");
         jMFormulariodeMateria.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +147,7 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMmateria);
 
-        jMadministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/instalaciones.gif"))); // NOI18N
+        jMadministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/m_universidad3.png"))); // NOI18N
 
         jMenuItem3.setText("Manejo de Inscripcion");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
@@ -162,14 +162,14 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMadministracion);
 
-        jMconsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/conocimiento.gif"))); // NOI18N
+        jMconsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/m_universidad4.png"))); // NOI18N
 
         AlumnoporMateria.setText("AlumnoporMateria");
         jMconsulta.add(AlumnoporMateria);
 
         jMenuBar1.add(jMconsulta);
 
-        jMsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salida (2).gif"))); // NOI18N
+        jMsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/m_salida4.png"))); // NOI18N
         jMsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMsalirActionPerformed(evt);
